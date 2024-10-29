@@ -175,10 +175,8 @@ document.addEventListener("DOMContentLoaded", function () {
   addTodoBtn.addEventListener("click", addTodoBtnListener);
 
   // Render todos from localStorage
-  let index = 1;
   todos.todoList.forEach((todo) => {
-    renderTodo(todo, index);
-    index++;
+    renderTodo(todo);
   });
 
   // Event listeners for filterBtns
